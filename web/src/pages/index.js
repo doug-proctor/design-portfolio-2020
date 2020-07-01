@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import {graphql} from 'gatsby'
 import {
   mapEdgesToNodes,
@@ -73,6 +73,12 @@ export const query = graphql`
 const IndexPage = props => {
   const {data, errors} = props
 
+  const sidesRef = useRef(null);
+  const studiesRef = useRef(null);
+  const contactRef = useRef(null);
+  const toolkitRef = useRef(null);
+  const strengthRef = useRef(null);
+
   if (errors) {
     return (
       <GraphQLErrorList errors={errors} />
@@ -92,21 +98,70 @@ const IndexPage = props => {
     )
   }
 
+  const jumpTo = target => {
+
+    console.log(target)
+
+    let node = undefined
+
+    if (target === 'strength') {
+      if (strengthRef) node = strengthRef
+    }
+
+    if (target === 'toolkit') {
+      if (toolkitRef) node = toolkitRef
+    }
+
+    if (target === 'studies') {
+      if (studiesRef) node = studiesRef
+    }
+
+    if (target === 'sides') {
+      if (sidesRef) node = sidesRef
+    }
+
+    if (target === 'contact') {
+      if (contactRef) node = contactRef
+    }
+
+    if (node) {
+      node.current.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  }
+
   return (
     <>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
-        <Header />
-        <Nav />
-        <SectionStrengths />
-        <Spacer mb={100} />
-        <SectionToolkit />
-        <Spacer mb={100} />
-        <SectionStudies />
-        <Spacer mb={100} />
-        <SectionSides />
-        <Spacer mb={100} />
-        <SectionContact />
-        <Spacer pb={100} />
+        <Header jumpTo={jumpTo} />
+        <Nav jumpTo={jumpTo} />
+          <Spacer mb={100} />
+
+        <div ref={strengthRef}>
+          <SectionStrengths />
+          <Spacer mb={100} />
+        </div>
+
+        <div ref={toolkitRef}>
+          <SectionToolkit />
+          <Spacer mb={100} />
+        </div>
+
+        <div ref={studiesRef}>
+          <SectionStudies />
+          <Spacer mb={100} />
+        </div>
+
+        <div ref={sidesRef}>
+          <SectionSides />
+          <Spacer mb={100} />
+        </div>
+
+        <div ref={contactRef}>
+          <SectionContact />
+          <Spacer pb={100} />
+        </div>
 
         <p style={{textAlign: 'center', opacity: 0.3}}>JAMstack! This site is built with Gatsby and Sanity.io</p>
         <Spacer pb={100} />

@@ -1,15 +1,33 @@
 import React from 'react'
 import styles from './nav.module.css'
-import Typeout from './typeout'
-import Avatar from './avatar'
-import Button from './button'
-import Spacer from './spacer'
 
-const Nav = () => (
+const items = [
+  {
+    title: "Strengths",
+    target: "strengths"
+  },{
+    title: "My toolkit",
+    target: "toolkit"
+  },{
+    title: "Case studies",
+    target: "studies"
+  },{
+    title: "Side projects",
+    target: "sides"
+  },{
+    title: "Contact",
+    target: "contact"
+  }
+]
+
+const Nav = ({ jumpTo }) => (
   <nav className={styles.root}>
-    <ul>
-      <li>one</li>
-      <li>two</li>
+    <ul className={styles.ul}>
+      {items.map(item => (
+        <li className={styles.li}>
+          <button className={styles.button} onClick={() => jumpTo(item.target)}>{item.title}</button>
+        </li>
+      ))}
     </ul>
   </nav>
 )
