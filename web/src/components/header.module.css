@@ -1,9 +1,8 @@
 .root {
+  padding: 2rem;
   display: block;
   text-align: center;
-  padding: 2rem;
   background: var(--grad-evening);
-  width: 100%;
 }
 
 .greeting {

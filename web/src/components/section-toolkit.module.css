@@ -1,8 +1,10 @@
 .root {
   display: block;
-  padding: 4rem 0;
-  background: transparent url(/bg-strengths.svg) center top no-repeat;
-  background-size: contain;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  border-radius: 20px;
+  background: var(--grad-arizona);
 }
 
 .title {
@@ -17,7 +19,7 @@
   display: grid;
   grid-gap: 2em;
   padding: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 
   /*@media (--media-min-small) {*/
   /*  grid-template-columns: 1fr 1fr;*/
@@ -32,7 +34,7 @@
   padding: 1rem;
   border-radius: 10px;
   background: var(--color-white);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .cardTitle {

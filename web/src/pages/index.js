@@ -8,10 +8,13 @@ import {
 import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
 import ProjectPreviewGrid from '../components/project-preview-grid'
+
+import Nav from '../components/nav'
 import SEO from '../components/seo'
 import Header from '../components/header'
-import Nav from '../components/nav'
+import Spacer from '../components/spacer'
 import SectionStrengths from '../components/section-strengths'
+import SectionToolkit from '../components/section-toolkit'
 
 import '../styles/layout.css'
 
@@ -91,7 +94,10 @@ const IndexPage = props => {
         <Header />
         <Nav />
         <SectionStrengths/>
+        <Spacer mb={100}/>
+        <SectionToolkit/>
 
+        <Spacer pt={1000}/>
         {/*{projectNodes && (*/}
         {/*  <ProjectPreviewGrid*/}
         {/*    title='Latest projects'*/}
