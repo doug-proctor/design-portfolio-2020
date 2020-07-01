@@ -13,9 +13,11 @@ import Nav from '../components/nav'
 import SEO from '../components/seo'
 import Header from '../components/header'
 import Spacer from '../components/spacer'
+
 import SectionStrengths from '../components/section-strengths'
 import SectionToolkit from '../components/section-toolkit'
 import SectionStudies from '../components/section-studies'
+import SectionSides from '../components/section-sides'
 
 import '../styles/layout.css'
 
@@ -94,11 +96,13 @@ const IndexPage = props => {
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
         <Header />
         <Nav />
-        <SectionStrengths/>
-        <Spacer mb={100}/>
-        <SectionToolkit/>
-        <Spacer mb={100}/>
-        <SectionStudies/>
+        <SectionStrengths />
+        <Spacer mb={100} />
+        <SectionToolkit />
+        <Spacer mb={100} />
+        <SectionStudies />
+        <Spacer mb={100} />
+        <SectionSides />
 
         <Spacer pt={1000}/>
         {/*{projectNodes && (*/}

@@ -21,7 +21,7 @@ const content = [
 const SectionStudies = () => {
   return (
     <div className={styles.root}>
-      <h2 className={styles.title}>Case studies</h2>
+      <h2 className={styles.title}>UX case studies</h2>
       <div className={styles.grid}>
         {content.map(card => (
           <div key={card.title} className={styles.card}>
