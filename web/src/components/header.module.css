@@ -1,8 +1,14 @@
+@import '../styles/custom-media.css';
+
 .root {
   background: var(--grad-evening);
   text-align: center;
+  padding: 2rem 1rem;
   display: block;
-  padding: 4rem;
+
+  @media (--media-min-medium) {
+    padding: 4rem;
+  }
 }
 
 .greeting {

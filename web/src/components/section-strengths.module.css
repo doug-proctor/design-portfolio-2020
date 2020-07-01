@@ -1,6 +1,8 @@
+@import '../styles/custom-media.css';
+
 .root {
   display: block;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   background: transparent url(/bg-strengths.svg) center top no-repeat;
   background-size: contain;
 }
@@ -17,22 +19,26 @@
   display: grid;
   grid-gap: 2em;
   padding: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 
-  /*@media (--media-min-small) {*/
-  /*  grid-template-columns: 1fr 1fr;*/
-  /*}*/
+  @media (--media-min-small) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-  /*@media (--media-min-medium) {*/
-  /*  grid-template-columns: 1fr 1fr 1fr 1fr;*/
-  /*}*/
+  @media (--media-min-medium) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (--media-min-large) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .card {
   padding: 1rem;
-  border-radius: 10px;
-  background: var(--color-white);
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  /*border-radius: 10px;*/
+  /*background: var(--color-white);*/
+  /*box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);*/
 }
 
 .cardTitle {

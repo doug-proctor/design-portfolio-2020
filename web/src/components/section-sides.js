@@ -43,17 +43,19 @@ const content = [
 
 const SectionSides = () => {
   return (
-    <div className={styles.root}>
-      <h2 className={styles.title}>Side projects & fun things</h2>
-      <div className={styles.grid}>
-        {content.map(card => (
-          <div key={card.title} className={styles.card}>
-            <img className={styles.cardImage} src={card.image} />
-            <h3 className={styles.cardTitle}>{card.title}</h3>
-            <p className={styles.cardDescription}>{card.description}</p>
-            <a className={styles.link} href={card.link}>{card.linkText}</a>
-          </div>
-        ))}
+    <div className={styles.wrapper}>
+      <div className={styles.section}>
+        <h2 className={styles.title}>Side projects & fun things</h2>
+        <div className={styles.grid}>
+          {content.map(card => (
+            <div key={card.title} className={styles.card}>
+              <img className={styles.cardImage} src={card.image} />
+              <h3 className={styles.cardTitle}>{card.title}</h3>
+              <p className={styles.cardText}>{card.description}</p>
+              <a className={styles.link} href={card.link}>{card.linkText}</a>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

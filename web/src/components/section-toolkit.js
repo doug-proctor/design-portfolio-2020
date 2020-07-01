@@ -49,21 +49,23 @@ const content = [
 
 const SectionToolkit = () => {
   return (
-    <div className={styles.root}>
-      <h2 className={styles.title}>What’s in my toolkit?</h2>
-      <div className={styles.grid}>
-        {content.map(card => (
-          <div key={card.title} className={styles.card}>
-            <img className={styles.cardImage} src={card.image} />
-            <h3 className={styles.cardTitle}>{card.title}</h3>
-            <h2 className={styles.cardSubtitle}>{card.subtitle}</h2>
-            <ul>
-              {card.items.map(item => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+    <div className={styles.wrapper}>
+      <div className={styles.section}>
+        <h2 className={styles.title}>What’s in my toolkit?</h2>
+        <div className={styles.grid}>
+          {content.map(card => (
+            <div key={card.title} className={styles.card}>
+              <img className={styles.cardImage} src={card.image} />
+              <h3 className={styles.cardTitle}>{card.title}</h3>
+              <h2 className={styles.cardSubtitle}>{card.subtitle}</h2>
+              <ul>
+                {card.items.map(item => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

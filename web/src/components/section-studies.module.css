@@ -1,9 +1,9 @@
+@import '../styles/custom-media.css';
+
 .root {
   display: block;
   margin: 0 auto;
-  padding: 4rem 2rem;
-  max-width: 1200px;
-  border-radius: 20px;
+  padding: 3rem 1rem;
   background: var(--grad-skin);
 }
 
@@ -19,15 +19,15 @@
   display: grid;
   grid-gap: 2em;
   padding: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 
-  /*@media (--media-min-small) {*/
-  /*  grid-template-columns: 1fr 1fr;*/
-  /*}*/
+  @media (--media-min-small) {
+    grid-template-columns: 1fr 1fr;
+  }
 
-  /*@media (--media-min-medium) {*/
-  /*  grid-template-columns: 1fr 1fr 1fr 1fr;*/
-  /*}*/
+  @media (--media-min-medium) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .card {

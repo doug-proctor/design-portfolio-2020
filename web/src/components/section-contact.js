@@ -8,12 +8,14 @@ const content = {
 
 const SectionContact = () => {
   return (
-    <div className={styles.root}>
-      <h2 className={styles.title}>Ready to roll?</h2>
-      <div className={styles.detail}>
-        <a href={`mailto:${content.email}`}>{content.email}</a>
+    <div className={styles.wrapper}>
+      <div className={styles.root}>
+        <h2 className={styles.title}>Ready to roll?</h2>
+        <div className={styles.detail}>
+          <a href={`mailto:${content.email}`}>{content.email}</a>
+        </div>
+        <div className={styles.detail}>{content.phone}</div>
       </div>
-      <div className={styles.detail}>{content.phone}</div>
     </div>
   )
 }

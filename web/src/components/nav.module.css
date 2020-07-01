@@ -1,12 +1,19 @@
+@import '../styles/custom-media.css';
+
 .root {
   top: 0;
-  padding: 1rem;
-  display: block;
-  position: sticky;
+  display: none;
   z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+  position: sticky;
   backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, 0.5);
+
+  @media (--media-min-medium) {
+   display: block;
+  }
 }
+
 
 .ul {
   margin: 0;
