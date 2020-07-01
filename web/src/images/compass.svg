@@ -1,0 +1,34 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+<rect width="100" height="100" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<circle cx="49.3273" cy="49.4359" r="37.6618" transform="rotate(-15 49.3273 49.4359)" fill="url(#paint0_linear)"/>
+<circle cx="49.3273" cy="49.4359" r="37.6618" transform="rotate(-15 49.3273 49.4359)" fill="black"/>
+<path d="M77.3781 41.9198C81.5291 57.4116 72.3355 73.3353 56.8437 77.4864C41.3518 81.6374 25.4281 72.4438 21.2771 56.952C17.1261 41.4601 26.3196 25.5364 41.8115 21.3854C57.3033 17.2344 73.227 26.4279 77.3781 41.9198Z" stroke="white" stroke-width="4"/>
+<path d="M56.4396 47.53C57.4921 51.4582 55.161 55.4958 51.2328 56.5484C47.3047 57.6009 43.267 55.2698 42.2145 51.3416C41.1619 47.4134 43.4931 43.3758 47.4212 42.3232C51.3494 41.2707 55.387 43.6018 56.4396 47.53Z" stroke="white"/>
+<path d="M45.1502 33.845L49.1307 41.7763L45.6686 42.7039L45.1502 33.845Z" fill="white"/>
+<path d="M53.5057 65.0267L52.9872 56.1678L49.5252 57.0955L53.5057 65.0267Z" fill="white"/>
+<path d="M64.9184 45.2583L56.9872 49.2388L56.0595 45.7768L64.9184 45.2583Z" fill="white"/>
+<path d="M33.7368 53.6133L42.5956 53.0949L41.668 49.6328L33.7368 53.6133Z" fill="white"/>
+<path d="M39.4652 43.742L42.3605 46.3172L43.143 44.9618L39.4652 43.742Z" fill="white"/>
+<path d="M59.0533 55.0515L56.158 52.4763L55.3755 53.8316L59.0533 55.0515Z" fill="white"/>
+<path d="M65.709 28.069L52.1529 51.8728L32.947 70.8022L46.2409 47.3403L65.709 28.069Z" fill="white" stroke="black"/>
+<ellipse cx="49.3273" cy="49.4358" rx="1.2416" ry="1.2416" transform="rotate(-15 49.3273 49.4358)" fill="black"/>
+<line x1="41.7208" y1="20.7137" x2="42.9616" y2="25.3444" stroke="white" stroke-linecap="round"/>
+<line x1="56.0743" y1="74.282" x2="57.3151" y2="78.9128" stroke="white" stroke-linecap="round"/>
+<line x1="78.2636" y1="42.6285" x2="73.6329" y2="43.8693" stroke="white" stroke-linecap="round"/>
+<line x1="24.6953" y1="56.982" x2="20.0645" y2="58.2228" stroke="white" stroke-linecap="round"/>
+<line x1="64.5307" y1="24.1024" x2="62.1336" y2="28.2543" stroke="white" stroke-linecap="round"/>
+<line x1="0.5" y1="-0.5" x2="5.29412" y2="-0.5" transform="matrix(-0.500001 0.866025 -0.866026 -0.499999 36.6182 71.4475)" stroke="white" stroke-linecap="round"/>
+<line x1="23.1947" y1="34.4464" x2="27.3466" y2="36.8434" stroke="white" stroke-linecap="round"/>
+<line x1="0.5" y1="-0.5" x2="5.29413" y2="-0.5" transform="matrix(0.866025 0.500001 -0.499999 0.866026 70.54 62.3584)" stroke="white" stroke-linecap="round"/>
+<ellipse cx="39.9798" cy="12.9502" rx="2.4832" ry="2.4832" transform="rotate(-15 39.9798 12.9502)" fill="black"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear" x1="49.4157" y1="4.30781" x2="49.4157" y2="95.7772" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8572FF"/>
+<stop offset="1" stop-color="#67FF92"/>
+</linearGradient>
+</defs>
+</svg>

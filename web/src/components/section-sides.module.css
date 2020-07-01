@@ -31,7 +31,7 @@
 }
 
 .card {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem 1rem;
   text-align: center;
   border-radius: 10px;
   background: var(--color-white);
@@ -57,4 +57,10 @@
   width: 100px;
   margin: 0 auto;
   display: block;
+}
+
+.link {
+  color: var(--color-grape);
+  text-decoration: none;
+  font-weight: 800;
 }

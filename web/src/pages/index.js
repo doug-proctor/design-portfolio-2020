@@ -104,7 +104,7 @@ const IndexPage = props => {
 
     let node = undefined
 
-    if (target === 'strength') {
+    if (target === 'strengths') {
       if (strengthRef) node = strengthRef
     }
 

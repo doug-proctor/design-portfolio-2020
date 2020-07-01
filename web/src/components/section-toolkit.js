@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './section-toolkit.module.css'
 
-import compassIcon from '../images/campass.svg'
+import compassIcon from '../images/compass.svg'
 import drawingIcon from '../images/drawing.svg'
-import devIcon from '../images/drawing.svg'
+import devIcon from '../images/dev.svg'
 
 const content = [
   {

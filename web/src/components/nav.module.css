@@ -28,4 +28,5 @@
   background: none;
   font-weight: 800;
   font-size: var(--font-base-size);
+  color: var(--color-light-gray);
 }
