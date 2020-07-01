@@ -20,6 +20,15 @@ module.exports = {
         watchMode: !isProd,
         overlayDrafts: !isProd && token
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto\:400,900` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
     }
   ]
 }

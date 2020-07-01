@@ -1,29 +1,21 @@
-import {Link} from 'gatsby'
 import React from 'react'
-import Icon from './icon'
-import {cn} from '../lib/helpers'
-
 import styles from './header.module.css'
+import Typeout from './typeout'
+import Avatar from './avatar'
+import Button from './button'
+import Spacer from './spacer'
 
-const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
+const Header = () => (
   <div className={styles.root}>
-    <div className={styles.wrapper}>
-      <div className={styles.branding}>
-        <Link to='/'>{siteTitle}</Link>
-      </div>
-
-      <button className={styles.toggleNavButton} onClick={showNav ? onHideNav : onShowNav}>
-        <Icon symbol='hamburger' />
-      </button>
-
-      <nav className={cn(styles.nav, showNav && styles.showNav)}>
-        <ul>
-          <li>
-            <Link to='/archive/'>Archive</Link>
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <Avatar />
+      <Spacer mb={40}/>
+      <div className={styles.greeting}>Hi! I’m Doug</div>
+      <Spacer mb={10}/>
+      <Typeout />
+      <Spacer mb={20}/>
+      <div className={styles.intro}>I’m a London-based all-round designer with a focus on discovery and strategy. I have particular expertise in IA, prototyping and interaction.</div>
+      <Spacer mb={40}/>
+    <Button>Jump to case studies ↓</Button>
   </div>
 )
 

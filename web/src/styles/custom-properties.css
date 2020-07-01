@@ -1,5 +1,5 @@
 :root {
-  --font-family-sans: -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-sans: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --color-black: #202123;
   --color-dark-gray: #32373e;
@@ -9,13 +9,19 @@
   --color-white: #fff;
   --color-accent: #156dff;
 
+  --color-grape: #BF48BB;
+
+  --grad-evening: linear-gradient(156.54deg, #D4DAE8 18.49%, #FFF8EB 76.87%), linear-gradient(0deg, #F8F8F8, #F8F8F8), linear-gradient(180deg, #8572FF -9.91%, #67FF92 111.52%);
+  --grad-skin: linear-gradient(180deg, rgba(218, 218, 218, 0.2) 0%, rgba(221, 183, 183, 0.41) 100%);
+  --grad-arizona: linear-gradient(151.06deg, #D4DAE8 18.49%, #F9F9F9 76.87%), linear-gradient(0deg, #F8F8F8, #F8F8F8), linear-gradient(180deg, #8572FF -9.91%, #67FF92 111.52%);
+
   /* Typography */
-  --unit: 16;
+  --unit: 18;
   --font-micro-size: calc(10 / var(--unit) * 1rem); /* 10px */
   --font-micro-line-height: calc(12 / 10); /* 12px */
   --font-small-size: calc(14 / var(--unit) * 1rem); /* 14px */
   --font-small-line-height: calc(21 / 14); /* 21px */
-  --font-base-size: 1em; /* 16px */
+  --font-base-size: 18px;
   --font-base-line-height: calc(24 / var(--unit)); /* 24px */
   --font-large-size: calc(18 / var(--unit) * 1rem); /* 18px */
   --font-large-line-height: calc(27 / 18); /* 27px */
