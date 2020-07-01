@@ -15,6 +15,7 @@ import Header from '../components/header'
 import Spacer from '../components/spacer'
 import SectionStrengths from '../components/section-strengths'
 import SectionToolkit from '../components/section-toolkit'
+import SectionStudies from '../components/section-studies'
 
 import '../styles/layout.css'
 
@@ -96,6 +97,8 @@ const IndexPage = props => {
         <SectionStrengths/>
         <Spacer mb={100}/>
         <SectionToolkit/>
+        <Spacer mb={100}/>
+        <SectionStudies/>
 
         <Spacer pt={1000}/>
         {/*{projectNodes && (*/}

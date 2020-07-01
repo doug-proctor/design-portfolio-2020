@@ -1,9 +1,14 @@
 import React from 'react'
-// import styles from './avatar.module.css'
 import avatar from '../images/doug.png'
 
 const Avatar = ({sm}) => {
-  return <img src={avatar} alt="Doug’s avatar" width={ sm ? '100' : '210'}/>
+  const styles = {
+    width: 210
+  }
+
+  if (sm) styles.width = 100
+
+  return <img src={avatar} alt="Doug’s avatar" style={styles}/>
 }
 
 export default Avatar

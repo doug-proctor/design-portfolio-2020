@@ -1,8 +1,8 @@
 .root {
-  padding: 2rem;
-  display: block;
-  text-align: center;
   background: var(--grad-evening);
+  text-align: center;
+  display: block;
+  padding: 4rem;
 }
 
 .greeting {

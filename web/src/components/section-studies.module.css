@@ -4,7 +4,7 @@
   padding: 4rem 2rem;
   max-width: 1200px;
   border-radius: 20px;
-  background: var(--grad-arizona);
+  background: var(--grad-skin);
 }
 
 .title {
@@ -31,21 +31,31 @@
 }
 
 .card {
-  padding: 1rem;
+  overflow: hidden;
+  cursor: pointer;
   border-radius: 10px;
+  transition: all 0.1s linear;
   background: var(--color-white);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: all 0.1s linear;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 .cardTitle {
+  margin: 1rem 0 0.5rem;
+  padding: 0 1rem;
   font-size: var(--font-title3-size);
-  margin-bottom: 0.3rem;
 }
 
 .cardSubtitle {
-  font-size: var(--font-large-size);
+  padding: 0 1rem;
+  margin: 0.5rem 0 1rem;
   color: var(--color-light-gray);
-  font-weight: 300;
-  margin-top: 0;
+  font-size: var(--font-large-size);
 }
 
 .cardText {
@@ -53,7 +63,5 @@
 }
 
 .cardImage {
-  width: 100px;
-  margin: 0 auto;
-  display: block;
+
 }
