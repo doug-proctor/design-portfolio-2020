@@ -18,6 +18,7 @@ import SectionStrengths from '../components/section-strengths'
 import SectionToolkit from '../components/section-toolkit'
 import SectionStudies from '../components/section-studies'
 import SectionSides from '../components/section-sides'
+import SectionContact from '../components/section-contact'
 
 import '../styles/layout.css'
 
@@ -103,8 +104,14 @@ const IndexPage = props => {
         <SectionStudies />
         <Spacer mb={100} />
         <SectionSides />
+        <Spacer mb={100} />
+        <SectionContact />
+        <Spacer pb={100} />
 
-        <Spacer pt={1000}/>
+        <p style={{textAlign: 'center', opacity: 0.3}}>JAMstack! This site is built with Gatsby and Sanity.io</p>
+        <Spacer pb={100} />
+
+
         {/*{projectNodes && (*/}
         {/*  <ProjectPreviewGrid*/}
         {/*    title='Latest projects'*/}
