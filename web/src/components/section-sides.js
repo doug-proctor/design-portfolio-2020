@@ -29,13 +29,13 @@ const content = [
   }, {
     image: sketchIcon,
     title: 'Sketch to HTML plugin',
-    description: 'Explore the relationship between ISO, aperture and shutter speed. Master the exposure triangle today!',
+    description: 'I made a Sketch plugin that converts your artboards into a clickable HTML prototype.',
     linkText: 'Defunct but check it out',
     link: 'https://github.com/doug-proctor/sketch-to-html'
   },{
     image: yamlIcon,
     title: 'YAML to Bootstrap wireframer',
-    description: 'Explore the relationship between ISO, aperture and shutter speed. Master the exposure triangle today!',
+    description: 'Describe your layouts with text and this tool will generate them in HTML.',
     linkText: 'Defunct but check it out',
     link: 'https://github.com/doug-proctor/yaml-bootstrap'
   },

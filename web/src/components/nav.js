@@ -24,7 +24,7 @@ const Nav = ({ jumpTo }) => (
   <nav className={styles.root}>
     <ul className={styles.ul}>
       {items.map(item => (
-        <li className={styles.li}>
+        <li key={item.target} className={styles.li}>
           <button className={styles.button} onClick={() => jumpTo(item.target)}>{item.title}</button>
         </li>
       ))}
