@@ -15,7 +15,7 @@ const words = [
 ];
 
 const Typeout = () => {
-  return <h1 className={styles.root}>I’m a UX designer</h1>
+  return <h1 className={styles.root}>I’m a product designer</h1>
   // return <h1 className={styles.root}>I’m a <Typical
   //   steps={['Hello', 1000, 'Hello world!', 500]}
   //   loop={Infinity}
