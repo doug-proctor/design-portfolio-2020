@@ -39,7 +39,8 @@ const content = [
     image: devIcon,
     items: [
       'React / Redux',
-      'Gatsby / Sanity',
+      'Gatsby',
+      'Sanity',
       'Laravel',
       'Symfony',
     ]
