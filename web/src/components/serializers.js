@@ -1,8 +1,10 @@
 import Figure from './figure'
+import Dingus from './dingus'
 
 const serializers = {
   types: {
-    figure: Figure
+    figure: Figure,
+    dingus: Dingus
   }
 }
 

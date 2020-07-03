@@ -7,7 +7,7 @@
 .section {
   display: block;
   margin: 0 auto;
-  padding: 4rem 1rem;
+  padding: 4rem 2rem;
   max-width: 1200px;
   border-radius: 20px;
   background: var(--grad-arizona);

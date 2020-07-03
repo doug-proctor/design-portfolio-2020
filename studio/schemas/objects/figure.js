@@ -19,9 +19,18 @@ export default {
       type: 'string',
       title: 'Alternative text',
       validation: Rule => Rule.error('You have to fill out the alternative text.').required(),
-      description: 'Important for SEO and accessiblity.',
+      description: 'Important for SEO and accessibility.',
       options: {
         isHighlighted: true
+      }
+    },
+    {
+      title: 'Page-wide',
+      name: 'pageWide',
+      type: 'boolean',
+      options: {
+        isHighlighted: true,
+        layout: 'checkbox'
       }
     }
   ],

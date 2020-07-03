@@ -37,30 +37,7 @@ export const query = graphql`
       edges {
         node {
           id
-          mainImage {
-            crop {
-              _key
-              _type
-              top
-              bottom
-              left
-              right
-            }
-            hotspot {
-              _key
-              _type
-              x
-              y
-              height
-              width
-            }
-            asset {
-              _id
-            }
-            alt
-          }
           title
-          _rawExcerpt
           slug {
             current
           }
@@ -134,9 +111,11 @@ const IndexPage = props => {
   return (
     <>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
+
         <Header jumpTo={jumpTo} />
+
         <Nav jumpTo={jumpTo} />
-          <Spacer mb={100} />
+        <Spacer mb={100} />
 
         <div ref={strengthRef}>
           <SectionStrengths />
@@ -162,19 +141,6 @@ const IndexPage = props => {
           <SectionContact />
           <Spacer pb={100} />
         </div>
-
-        <p style={{textAlign: 'center', opacity: 0.3}}>JAMstack! This site is built with Gatsby and Sanity.io</p>
-        <Spacer pb={100} />
-
-
-        {/*{projectNodes && (*/}
-        {/*  <ProjectPreviewGrid*/}
-        {/*    title='Latest projects'*/}
-        {/*    nodes={projectNodes}*/}
-        {/*    browseMoreHref='/archive/'*/}
-        {/*  />*/}
-        {/*)}*/}
-
     </>
   )
 }
