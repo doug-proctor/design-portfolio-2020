@@ -76,9 +76,6 @@ const IndexPage = props => {
   }
 
   const jumpTo = target => {
-
-    console.log(target)
-
     let node = undefined
 
     if (target === 'strengths') {
@@ -119,7 +116,6 @@ const IndexPage = props => {
 
         <div ref={strengthRef}>
           <SectionStrengths />
-          <Spacer mb={100} />
         </div>
 
         <div ref={toolkitRef}>

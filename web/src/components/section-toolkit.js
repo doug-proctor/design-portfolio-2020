@@ -11,26 +11,26 @@ const content = [
     subtitle: 'Solving for lack of information',
     image: compassIcon,
     items: [
-      'Stakeholder interviews',
-      'Competitive research',
+      'Personas',
       'Contextual inquiry',
+      'Process mapping',
+      'Stakeholder interviews',
       'Heuristic analysis',
       'Google Analytics',
-      'Process mapping',
+      'Competitive research',
       'Call centre logs',
-      'Personas',
     ]
   }, {
     title: 'Prototyping & IA',
     subtitle: 'Solving for user needs & business goals',
     image: drawingIcon,
     items: [
-      'Tree tests',
-      'Card sorts',
-      'Usability tests',
       'Journey mapping',
       'Paper prototyping',
+      'Tree tests',
       'Participant screening',
+      'Card sorts',
+      'Usability tests',
       'Technical feasibility',
     ]
   }, {
@@ -42,7 +42,6 @@ const content = [
       'Gatsby / Sanity',
       'Laravel',
       'Symfony',
-      'XCode',
     ]
   }
 ]
