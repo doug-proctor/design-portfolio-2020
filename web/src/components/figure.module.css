@@ -2,7 +2,7 @@
 
 .normal {
   margin: 3rem auto;
-  width: 500px;
+  max-width: 500px;
 
   & img {
     border-radius: 20px;
