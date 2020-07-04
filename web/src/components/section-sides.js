@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './section-sides.module.css'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import kiwaIcon from '../images/kiwa.svg'
 import chefsIcon from '../images/chefs.svg'
@@ -52,7 +53,7 @@ const SectionSides = () => {
               <img className={styles.cardImage} src={card.image} />
               <h3 className={styles.cardTitle}>{card.title}</h3>
               <p className={styles.cardText}>{card.description}</p>
-              <a className={styles.link} href={card.link}>{card.linkText}</a>
+              <OutboundLink className={styles.link} href={card.link}>{card.linkText}</OutboundLink>
             </div>
           ))}
         </div>
