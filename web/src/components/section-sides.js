@@ -19,7 +19,7 @@ const content = [
     image: chefsIcon,
     title: 'Allergen data',
     description: 'Track allergens in every ingredient, recipe and dish. For high-end restaurants. Launching soon!',
-    link: 'https://chefshandbook.dougproctor.co.uk',
+    link: 'https://chefshandbook.co',
     linkText: 'Check it out'
   }, {
     image: exposuresIcon,

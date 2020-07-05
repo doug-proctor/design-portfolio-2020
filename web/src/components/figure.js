@@ -5,17 +5,15 @@ import clientConfig from '../../client-config'
 
 import styles from './figure.module.css'
 
-export default ({node}) => {
-  if (!node.asset) {
+export default ({ node }) => {
+  if (!node || !node.asset) {
     return null
   }
 
   const fluidProps = getFluidGatsbyImage(node.asset._ref, {maxWidth: 675}, clientConfig.sanity)
 
-  const classNames = node.pageWide ? styles.wide : styles.normal
-
   return (
-    <figure className={classNames}>
+    <figure className={styles.root}>
       <Img fluid={fluidProps} alt={node.alt} />
       {node.caption && <figcaption>{node.caption}</figcaption>}
     </figure>

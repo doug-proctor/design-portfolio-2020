@@ -23,15 +23,6 @@ export default {
       options: {
         isHighlighted: true
       }
-    },
-    {
-      title: 'Page-wide',
-      name: 'pageWide',
-      type: 'boolean',
-      options: {
-        isHighlighted: true,
-        layout: 'checkbox'
-      }
     }
   ],
   preview: {

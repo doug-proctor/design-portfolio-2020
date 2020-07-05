@@ -17,7 +17,7 @@ function Project (props) {
       <div className={styles.summary}>
         {
           keyValues.map(kv => (
-            <dl className={styles.dl}>
+            <dl className={styles.dl} key={kv.key}>
               <dt className={styles.dt}>{kv.key}</dt>
               <dd className={styles.dd}>{kv.value}</dd>
             </dl>

@@ -13,6 +13,18 @@ module.exports = {
     'gatsby-plugin-postcss',
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Doug Proctor, Lead Designer`,
+        short_name: `Doug Proctor`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#F44A25`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    {
       resolve: 'gatsby-source-sanity',
       options: {
         ...clientConfig.sanity,

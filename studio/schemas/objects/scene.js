@@ -11,7 +11,7 @@ const client = sanityClient({
 
 const builder = imageUrlBuilder(client)
 
-function urlFor(source) {
+function src(source) {
   return builder.image(source)
 }
 
@@ -21,33 +21,42 @@ const style = {
   display: 'inline-block',
 }
 
-const render = thing => (
-  thing.asset && <img alt="Thumbnail" style={style} src={urlFor(thing.asset._ref).height(45).url()} />
+const renderThumbnail = figure => (
+  figure.asset && <img alt="Thumbnail" style={style} src={src(figure.asset._ref).height(45).url()} />
 )
 
-const Dingus = props => {
-  if (props.value && props.value.things) {
-    return props.value.things.map(render)
+const Scene = props => {
+  if (props.value && props.value.figures) {
+    return props.value.figures.map(renderThumbnail)
   }
   return null
 }
 
 export default {
-  name: 'dingus',
-  title: 'Dingus',
+  name: 'scene',
+  title: 'Scene',
   type: 'object',
   fields: [
     {
-      name: 'things',
-      title: 'Things',
+      title: 'Page-wide',
+      name: 'pageWide',
+      type: 'boolean',
+      options: {
+        isHighlighted: true,
+        layout: 'checkbox'
+      }
+    },
+    {
+      name: 'figures',
+      title: 'Figures',
       type: 'array',
       of: [{type: 'figure'}]
     }
   ],
   preview: {
     select: {
-      things: 'things'
+      figures: 'figures'
     },
-    component: Dingus
+    component: Scene
   }
 }

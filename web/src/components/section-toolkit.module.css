@@ -55,6 +55,10 @@
     text-align: left;
   }
 
+  @media (--media-min-xlarge) {
+    padding: 1rem 2rem 2rem;
+  }
+
   & ul {
     list-style: none;
   padding: 0;

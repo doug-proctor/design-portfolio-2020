@@ -1,27 +1,32 @@
 @import '../styles/custom-properties.css';
 
-.normal {
-  margin: 3rem auto;
-  max-width: 500px;
+.root {
+    margin: 0 0 1rem 0;
+    /*border: 1px solid var(--color-light-gray);*/
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  /*margin: 3rem auto;*/
+  /*max-width: 500px;*/
 
   & img {
-    border-radius: 20px;
+    transform: scale(1.004);
   }
 
   @nest & figcaption {
     font-size: var(--font-small-size);
     line-height: var(--font-small-line-height);
-    margin: 0.5rem 0 0;
+    padding: 0.5rem;
   }
 }
 
-.wide {
-  composes: normal;
-  margin: 2rem 1rem;
-  position: relative;
-  width: auto;
+/*.wide {*/
+/*  composes: normal;*/
+/*  margin: 2rem 1rem;*/
+/*  position: relative;*/
+/*  width: auto;*/
 
-  & img {
-    border-radius: 20px;
-  }
-}
+/*  & img {*/
+/*    border-radius: 20px;*/
+/*  }*/
+/*}*/

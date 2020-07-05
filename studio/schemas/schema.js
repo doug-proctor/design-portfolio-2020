@@ -10,7 +10,7 @@ import siteSettings from './documents/siteSettings'
 
 // Object types
 import figure from './objects/figure'
-import dingus from './objects/dingus'
+import scene from './objects/scene'
 import keyValue from './objects/keyValue'
 import projectPortableText from './objects/projectPortableText'
 import simplePortableText from './objects/simplePortableText'
@@ -24,8 +24,8 @@ export default createSchema({
   types: schemaTypes.concat([
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
+    scene,
     figure,
-    dingus,
     keyValue,
     projectPortableText,
     simplePortableText,

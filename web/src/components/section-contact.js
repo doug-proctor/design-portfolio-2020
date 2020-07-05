@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './section-contact.module.css'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Spacer from './spacer'
 
 const content = {
@@ -20,7 +21,7 @@ const SectionContact = ({ title }) => {
         </div>
       </div>
       <Spacer pb={100} pt={100}>
-        <p style={{textAlign: 'center', opacity: 0.3}}>JAMstack! This site is built with Gatsby and Sanity.io</p>
+        <p style={{textAlign: 'center', opacity: 0.3}}>JAMstack! This site is built with <OutboundLink href="https://www.gatsbyjs.org/">Gatsby</OutboundLink> and <OutboundLink href="https://www.sanity.io/">Sanity.io</OutboundLink></p>
       </Spacer>
     </div>
   )

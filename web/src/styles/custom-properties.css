@@ -9,7 +9,8 @@
   --color-white: #fff;
   --color-accent: #156dff;
 
-  --color-grape: #BF48BB;
+  --color-grape: #F44A25;
+  --color-mild: #FFFCFA;
 
   --grad-evening: linear-gradient(156.54deg, #D4DAE8 18.49%, #FFF8EB 76.87%), linear-gradient(0deg, #F8F8F8, #F8F8F8), linear-gradient(180deg, #8572FF -9.91%, #67FF92 111.52%);
   --grad-skin: linear-gradient(180deg, rgba(218, 218, 218, 0.2) 0%, rgba(221, 183, 183, 0.41) 100%);

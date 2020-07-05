@@ -40,6 +40,7 @@ const content = [
     items: [
       'React / Redux',
       'Gatsby',
+      'TypeScript',
       'Sanity',
       'Laravel',
       'Symfony',

@@ -2,6 +2,7 @@
 
 .root {
   background: var(--grad-evening);
+  background: var(--color-white);
   text-align: center;
   padding: 2rem 1rem;
   display: block;
