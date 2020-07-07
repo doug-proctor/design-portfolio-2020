@@ -4,7 +4,7 @@
 .root {
   display: block;
   position: relative;
-  max-width: 500px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
@@ -39,31 +39,3 @@
 .figureWrapper:last-child {
   margin-right: 0;
 }
-
-/*.root + .root {*/
-/*  margin-top: 2rem;*/
-/*}*/
-
-/*.root + h2 {*/
-/*  margin-top: 3rem !important;*/
-/*}*/
-
-/*.figure {*/
-/*  flex-grow: 1;*/
-/*  flex-basis: 0;*/
-/*  margin: 0 0 1rem 0;*/
-
-/*@media (min-width: 530px) {*/
-/*  margin: 0 1rem 1rem 1rem;*/
-/*}*/
-
-/*@nest & figcaption {*/
-/*  margin: 0.5rem 0 0;*/
-/*  font-size: var(--font-small-size);*/
-/*  line-height: var(--font-small-line-height);*/
-/*}*/
-
-/*& img {*/
-/*    border-radius: 10px;*/
-/*  }*/
-/*}*/

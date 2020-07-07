@@ -34,13 +34,6 @@
   }
 }
 
-.card {
-  /*padding: .5rem;*/
-  /*border-radius: 10px;*/
-  /*background: var(--color-white);*/
-  /*box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);*/
-}
-
 .cardTitle {
   font-size: var(--font-title3-size);
 }

@@ -5,9 +5,7 @@ import {
   filterOutDocsWithoutSlugs,
   filterOutDocsPublishedInTheFuture
 } from '../lib/helpers'
-import Container from '../components/container'
 import GraphQLErrorList from '../components/graphql-error-list'
-import ProjectPreviewGrid from '../components/project-preview-grid'
 
 import Nav from '../components/nav'
 import SEO from '../components/seo'
@@ -30,7 +28,7 @@ export const query = graphql`
       keywords
     }
     projects: allSanitySampleProject(
-      limit: 6
+      limit: 3
       sort: {fields: [publishedAt], order: DESC}
       filter: {slug: {current: {ne: null}}, publishedAt: {ne: null}}
     ) {
@@ -38,6 +36,28 @@ export const query = graphql`
         node {
           id
           title
+          client
+          previewImage {
+            crop {
+              _key
+              _type
+              top
+              bottom
+              left
+              right
+            }
+            hotspot {
+              _key
+              _type
+              x
+              y
+              height
+              width
+            }
+            asset {
+              _id
+            }
+          }
           slug {
             current
           }
@@ -63,6 +83,7 @@ const IndexPage = props => {
   }
 
   const site = (data || {}).site
+
   const projectNodes = (data || {}).projects
     ? mapEdgesToNodes(data.projects)
       .filter(filterOutDocsWithoutSlugs)
@@ -71,7 +92,7 @@ const IndexPage = props => {
 
   if (!site) {
     throw new Error(
-      'Missing "Site settings". Open the studio at http://localhost:3333 and add some content to "Site settings" and restart the development server.'
+      'Missing site settings.'
     )
   }
 
@@ -124,7 +145,7 @@ const IndexPage = props => {
         </div>
 
         <div ref={studiesRef}>
-          <SectionStudies />
+          <SectionStudies studies={projectNodes} />
           <Spacer mb={100} />
         </div>
 

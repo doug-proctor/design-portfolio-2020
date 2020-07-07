@@ -20,6 +20,16 @@ export default {
       }
     },
     {
+      name: 'client',
+      title: 'Client',
+      type: 'string'
+    },
+    {
+      name: 'previewImage',
+      title: 'Preview image',
+      type: 'image'
+    },
+    {
       name: 'publishedAt',
       title: 'Published at',
       description: 'You can use this field to schedule projects where you show them',

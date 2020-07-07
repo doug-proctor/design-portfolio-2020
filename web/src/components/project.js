@@ -39,7 +39,7 @@ function Project (props) {
         {renderKeyValues()}
       </header>
       <div className={styles.wrapper}>
-          {_rawBody && <BlockContent blocks={_rawBody || []} />}
+        {_rawBody && <BlockContent blocks={_rawBody || []} />}
       </div>
       <Spacer mt={100}>
         <SectionContact title="Let’s make something" />
