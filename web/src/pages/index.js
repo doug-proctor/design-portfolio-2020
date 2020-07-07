@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import {graphql} from 'gatsby'
+
 import {
   mapEdgesToNodes,
   filterOutDocsWithoutSlugs,
@@ -24,8 +25,13 @@ export const query = graphql`
   query IndexPageQuery {
     site: sanitySiteSettings(_id: {regex: "/(drafts.|)siteSettings/"}) {
       title
-      description
       keywords
+      description
+      avatar {
+        asset {
+          _id
+        }
+      }
     }
     projects: allSanitySampleProject(
       limit: 3
@@ -38,22 +44,6 @@ export const query = graphql`
           title
           client
           previewImage {
-            crop {
-              _key
-              _type
-              top
-              bottom
-              left
-              right
-            }
-            hotspot {
-              _key
-              _type
-              x
-              y
-              height
-              width
-            }
             asset {
               _id
             }
@@ -130,7 +120,7 @@ const IndexPage = props => {
     <>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
 
-        <Header jumpTo={jumpTo} />
+        <Header jumpTo={jumpTo} avatar={site.avatar.asset._id} />
 
         <Nav jumpTo={jumpTo} />
         <Spacer mb={100} />

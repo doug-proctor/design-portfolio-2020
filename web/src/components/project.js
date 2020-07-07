@@ -8,7 +8,7 @@ import Spacer from './spacer'
 import SectionContact from './section-contact'
 
 function Project (props) {
-  const { _rawBody, title, keyValues } = props
+  const { _rawBody, title, keyValues, avatar } = props
 
   const goBack = e => e.preventDefault() || window.history.back()
 
@@ -30,7 +30,7 @@ function Project (props) {
   return (
     <article>
       <header className={styles.header}>
-        <Avatar sm />
+        <Avatar sm avatar={avatar}/>
         <div className={styles.name}>Doug Proctor <span className={styles.job}>Lead designer</span></div>
         <a href='/' className={styles.backLink} onClick={goBack}>
           « Back to case studies

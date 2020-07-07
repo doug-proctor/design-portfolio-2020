@@ -1,14 +1,16 @@
 import React from 'react'
-import avatar from '../images/doug.png'
+import Img from 'gatsby-image'
+import { getFluidGatsbyImage } from 'gatsby-source-sanity'
+import styles from './avatar.module.css'
 
-const Avatar = ({sm}) => {
-  const styles = {
-    width: 210
-  }
+import clientConfig from '../../client-config'
 
-  if (sm) styles.width = 100
+const Avatar = ({ avatar, sm }) => {
+  const fluidProps = getFluidGatsbyImage(avatar, {maxWidth: 210}, clientConfig.sanity)
 
-  return <img src={avatar} alt="Doug’s avatar" style={styles}/>
+  const classNames = sm ? styles.rootSmall : styles.root
+
+  return <Img fluid={fluidProps} alt="Doug’s avatar" className={classNames}/>
 }
 
 export default Avatar

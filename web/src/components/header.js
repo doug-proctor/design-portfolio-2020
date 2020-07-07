@@ -5,9 +5,9 @@ import Avatar from './avatar'
 import Button from './button'
 import Spacer from './spacer'
 
-const Header = ({ jumpTo }) => (
+const Header = ({ jumpTo, avatar }) => (
   <div className={styles.root}>
-    <Avatar />
+    <Avatar avatar={avatar}/>
     <Spacer mb={40}/>
     <div className={styles.greeting}>Hi! I’m Doug</div>
     <Spacer mb={10}/>

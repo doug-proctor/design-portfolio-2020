@@ -7,6 +7,13 @@ import SEO from '../components/seo'
 
 export const query = graphql`
   query ProjectTemplateQuery($id: String!) {
+    sanitySiteSettings {
+      avatar {
+        asset {
+          _id
+        }
+      }
+    }
     sampleProject: sanitySampleProject(id: {eq: $id}) {
       id
       publishedAt
@@ -26,6 +33,8 @@ export const query = graphql`
 const ProjectTemplate = props => {
   const { data, errors } = props
   const project = data && data.sampleProject
+  const avatar = data && data.sanitySiteSettings.avatar.asset._id
+
   return (
     <>
       {errors && <SEO title='GraphQL Error' />}
@@ -36,7 +45,7 @@ const ProjectTemplate = props => {
           <GraphQLErrorList errors={errors} />
         </Container>
       )}
-      {project && <Project {...project} />}
+      {project && <Project {...project} avatar={avatar} />}
     </>
   )
 }
