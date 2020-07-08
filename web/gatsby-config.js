@@ -10,8 +10,17 @@ const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
   plugins: [
-    'gatsby-plugin-postcss',
-    'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

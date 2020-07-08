@@ -29,7 +29,9 @@ export const query = graphql`
       description
       avatar {
         asset {
-          _id
+          fixed(width: 210) {
+            ...GatsbySanityImageFixed_noBase64
+          }
         }
       }
     }
@@ -73,6 +75,8 @@ const IndexPage = props => {
   }
 
   const site = (data || {}).site
+
+  console.log(site)
 
   const projectNodes = (data || {}).projects
     ? mapEdgesToNodes(data.projects)
@@ -120,7 +124,7 @@ const IndexPage = props => {
     <>
       <SEO title={site.title} description={site.description} keywords={site.keywords} />
 
-        <Header jumpTo={jumpTo} avatar={site.avatar.asset._id} />
+        <Header jumpTo={jumpTo} avatar={site.avatar.asset.fixed} />
 
         <Nav jumpTo={jumpTo} />
         <Spacer mb={100} />

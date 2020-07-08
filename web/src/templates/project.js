@@ -10,7 +10,9 @@ export const query = graphql`
     sanitySiteSettings {
       avatar {
         asset {
-          _id
+          fixed(width: 100) {
+            ...GatsbySanityImageFixed_noBase64
+          }
         }
       }
     }
@@ -33,7 +35,7 @@ export const query = graphql`
 const ProjectTemplate = props => {
   const { data, errors } = props
   const project = data && data.sampleProject
-  const avatar = data && data.sanitySiteSettings.avatar.asset._id
+  const avatar = data && data.sanitySiteSettings.avatar.asset.fixed
 
   return (
     <>
