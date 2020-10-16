@@ -31,7 +31,7 @@ function Project (props) {
     <article>
       <header className={styles.header}>
         <Avatar sm avatar={avatar}/>
-        <div className={styles.name}>Doug Proctor <span className={styles.job}>Lead designer</span></div>
+        <div className={styles.name}>Doug Proctor <span className={styles.job}>Strategic designer</span></div>
         <a href='/' className={styles.backLink} onClick={goBack}>
           « Back to case studies
         </a>
