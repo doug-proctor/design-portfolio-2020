@@ -9,7 +9,7 @@ import styles from './section-studies.module.css'
 const SectionStudies = ({ studies }) => {
   return (
     <div className={styles.root}>
-      <h2 className={styles.title}>UX case studies</h2>
+      <h2 className={styles.title}>UX/UI case studies</h2>
       <div className={styles.grid}>
         {studies.map(study => {
           const fluidProps = getFluidGatsbyImage(study.previewImage.asset._id, {maxWidth: 375}, clientConfig.sanity)

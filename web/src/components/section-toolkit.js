@@ -21,23 +21,26 @@ const content = [
       'Call centre logs',
     ]
   }, {
-    title: 'Prototyping & IA',
+    title: 'Prototyping & UI',
     subtitle: 'Solving for user needs & business goals',
     image: drawingIcon,
     items: [
       'Journey mapping',
-      'Paper prototyping',
-      'Tree tests',
-      'Participant screening',
       'Card sorts',
+      'Paper prototyping',
       'Usability tests',
-      'Technical feasibility',
+      'Tree tests',
+      // 'Participant screening',
+      // 'Technical feasibility',
+      'Component-based design',
+      'Design systems'
     ]
   }, {
     title: 'Engineering',
     subtitle: 'Build and deliver the solution',
     image: devIcon,
     items: [
+      'HTML + CSS + JavaScript',
       'React / Redux',
       'Gatsby',
       'TypeScript',
